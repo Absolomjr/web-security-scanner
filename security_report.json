@@ -1,0 +1,54 @@
+{
+    "target": "https://google.com",
+    "final_url": "https://www.google.com/",
+    "status_code": 200,
+    "total_findings": 9,
+    "findings": [
+        {
+            "severity": "Medium",
+            "issue": "Missing Strict-Transport-Security",
+            "recommendation": "Enforces HTTPS connections."
+        },
+        {
+            "severity": "Medium",
+            "issue": "Missing Content-Security-Policy",
+            "recommendation": "Helps prevent cross-site scripting (XSS)."
+        },
+        {
+            "severity": "Medium",
+            "issue": "Missing X-Content-Type-Options",
+            "recommendation": "Prevents MIME-type sniffing."
+        },
+        {
+            "severity": "Medium",
+            "issue": "Missing Referrer-Policy",
+            "recommendation": "Controls referrer information."
+        },
+        {
+            "severity": "Medium",
+            "issue": "Missing Permissions-Policy",
+            "recommendation": "Restricts browser features and APIs."
+        },
+        {
+            "severity": "Low",
+            "issue": "Technology disclosure through Server",
+            "evidence": "gws",
+            "recommendation": "Consider reducing unnecessary technology and version disclosure."
+        },
+        {
+            "severity": "Medium",
+            "issue": "Cookie __Secure-STRP missing HttpOnly flag",
+            "recommendation": "Set HttpOnly on cookies that do not need JavaScript access."
+        },
+        {
+            "severity": "Medium",
+            "issue": "Cookie NID missing Secure flag",
+            "recommendation": "Set Secure on cookies transmitted over HTTPS."
+        },
+        {
+            "severity": "Low",
+            "issue": "Cookie NID missing SameSite",
+            "recommendation": "Configure an appropriate SameSite policy."
+        }
+    ]
+}
