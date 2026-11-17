@@ -8,6 +8,7 @@ from http.cookies import SimpleCookie
 
 TIMEOUT = 15
 
+# security_headers
 SECURITY_HEADERS = {
     "Strict-Transport-Security":
         "Enforces HTTPS connections.",
